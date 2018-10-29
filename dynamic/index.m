@@ -51,7 +51,7 @@ axes1 = axes('Parent',figure1,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes1,'all');
 plot(group1.tms/1000,wr,'Parent',axes1,'LineWidth',2,'Color',[0 0 0]);
 title('Завдання швидкості, рад/с','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([0 120]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes2 = axes('Parent',figure1,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -62,7 +62,7 @@ axes2 = axes('Parent',figure1,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes2,'all');
 plot(group2.tms/1000,w,'Parent',axes2,'LineWidth',2,'Color',[0 0 0]);
 title('Відпрацювання швидкості, рад/с','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([0 120]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes3 = axes('Parent',figure1,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -73,7 +73,7 @@ axes3 = axes('Parent',figure1,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes3,'all');
 plot(group2.tms/1000,ewg,'Parent',axes3,'LineWidth',2,'Color',[0 0 0]);
 title('Помилка швидкості, рад/с','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([-50 50]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes4 = axes('Parent',figure1,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -84,7 +84,7 @@ axes4 = axes('Parent',figure1,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes4,'all');
 plot(group2.tms/1000,tet,'Parent',axes4,'LineWidth',2,'Color',[0 0 0]);
 title('Переміщення, рад','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %%ylim([0 120]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,7 +100,7 @@ axes1 = axes('Parent',figure2,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes1,'all');
 plot(group2.tms/1000,idr,'Parent',axes1,'LineWidth',2,'Color',[0 0 0]);
 title('Завдання струму id*, А','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([-1 1]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes2 = axes('Parent',figure2,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -111,7 +111,7 @@ axes2 = axes('Parent',figure2,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes2,'all');
 plot(group2.tms/1000,id,'Parent',axes2,'LineWidth',2,'Color',[0 0 0]);
 title('Відпрацювання струму id, А','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([-1 1]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes3 = axes('Parent',figure2,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -122,7 +122,7 @@ axes3 = axes('Parent',figure2,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes3,'all');
 plot(group2.tms/1000,iqr,'Parent',axes3,'LineWidth',2,'Color',[0 0 0]);
 title('Завдання струму iq*, А','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([-3 3]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes4 = axes('Parent',figure2,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -133,7 +133,7 @@ axes4 = axes('Parent',figure2,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes4,'all');
 plot(group2.tms/1000,iq,'Parent',axes4,'LineWidth',2,'Color',[0 0 0]);
 title('Відпрацювання струму iq, А','FontName','Times New Roman');
-xlim([0 xmax]); 
+xlim([-0.1 xmax]); 
 %ylim([-3 3]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 figure3 = figure('PaperSize',[20.98404194812 29.67743169791]);
@@ -146,7 +146,7 @@ axes1 = axes('Parent',figure3,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes1,'all');
 plot(group3.tms/1000,ud,'Parent',axes1,'LineWidth',2,'Color',[0 0 0]);
 title('Напруга ud, B','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([-20 20]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -158,7 +158,7 @@ axes3 = axes('Parent',figure3,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes3,'all');
 plot(group3.tms/1000,uq,'Parent',axes3,'LineWidth',2,'Color',[0 0 0]);
 title('Напруга uq , В','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([-40 40]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -174,7 +174,7 @@ axes1 = axes('Parent',figure4,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes1,'all');
 plot(group4.tms/1000,Udc,'Parent',axes1,'LineWidth',2,'Color',[0 0 0]);
 title('Напруга ланки постійного струму, B','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([0 600]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes2 = axes('Parent',figure4,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -185,7 +185,7 @@ axes2 = axes('Parent',figure4,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes2,'all');
 plot(group4.tms/1000,P0065,'Parent',axes2,'LineWidth',2,'Color',[0 0 0]);
 title('Absolute voltage value, actual value, В','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 ylim([-10 70]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes3 = axes('Parent',figure4,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -196,7 +196,7 @@ axes3 = axes('Parent',figure4,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes3,'all');
 plot(group4.tms/1000,is1,'Parent',axes3,'LineWidth',2,'Color',[0 0 0]);
 title('Струм статора is1, А','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([-4 4]); 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 axes4 = axes('Parent',figure4,'XTickLabel',{'0','0.5','1','t, c'},...
@@ -207,7 +207,7 @@ axes4 = axes('Parent',figure4,'XTickLabel',{'0','0.5','1','t, c'},...
     hold(axes4,'all');
 plot(group4.tms/1000,is2,'Parent',axes4,'LineWidth',2,'Color',[0 0 0]);
 title('Струм статора is2, А','FontName','Times New Roman');
-xlim([0 xmax]);  
+xlim([-0.1 xmax]);  
 %ylim([-4 4]);
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
