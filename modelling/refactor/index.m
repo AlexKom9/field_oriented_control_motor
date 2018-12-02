@@ -18,7 +18,6 @@ J=0.00001;
 %computed
 km=3*(Lm*iff*pn)/2;
 
-
 % controller's parameters
 
 ki1=20000;
